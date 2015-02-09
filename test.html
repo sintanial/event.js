@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="event.js"></script>
+</head>
+<body>
+
+<script>
+
+    var e = new EventEmitter();
+    e.on('play.test pause.test', function(){},e);
+    e.on('seek.test', function(){},3, e);
+    e.on('timeupdate.roll', function(){});
+</script>
+</body>
+</html>
